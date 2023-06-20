@@ -1,0 +1,111 @@
+﻿body {
+    background:url(./Images/hogwarts-logo-low-opacity.png)center center fixed; 
+    background-color:#DED6D1;
+    background-repeat:no-repeat;
+}
+h1, h2, h3, p {
+    color:#3E2819;
+}
+.logo {
+    margin:20px 70px;
+}
+.logo img {
+    display:inline-block;
+    width:64px;
+    height:auto;
+    margin-right:20px;
+}
+.auto-style1 {
+    width: 100%;
+}
+.auto-style2 {
+    height: 23px;
+}
+menu ul {
+    list-style:none;
+    height: 44px;
+}
+    menu ul li {
+        background-color: #3E2819;
+        border: 2px solid white;
+        width: 160px;
+        line-height: 40px;
+        text-align: center;
+        float: left;
+        position:relative;
+    }
+        menu ul li:hover {
+            background-color:#82593E;
+        }
+        menu ul li a {
+            color:white;
+            text-decoration: none;
+        }
+.auto-style4 {
+    text-align: center;
+}
+.auto-style5 {
+    width: 250px;
+}
+.auto-style6 {
+    height: 23px;
+    width: 250px;
+}
+.auto-style7 {
+}
+.auto-style8 {
+    height: 23px;
+    width: 265px;
+}
+.auto-style11 {
+    width: 179px;
+}
+.auto-style12 {
+    height: 23px;
+    width: 179px;
+}
+.auto-style14 {
+    width: 179px;
+    height: 24px;
+}
+.auto-style15 {
+    width: 265px;
+    height: 24px;
+}
+.auto-style16 {
+    width: 250px;
+    height: 24px;
+}
+.auto-style17 {
+    height: 24px;
+}
+.auto-style19 {
+    width: 179px;
+    height: 12px;
+}
+.auto-style20 {
+    width: 265px;
+    height: 12px;
+}
+.auto-style21 {
+    width: 250px;
+    height: 12px;
+}
+.auto-style22 {
+    height: 12px;
+}
+.auto-style23 {
+    width: 95px;
+}
+.auto-style24 {
+    width: 95px;
+    height: 12px;
+}
+.auto-style25 {
+    width: 95px;
+    height: 24px;
+}
+.auto-style26 {
+    height: 23px;
+    width: 95px;
+}
