@@ -34,3 +34,39 @@ c:\users\atomic\documents\visual studio 2012\Projects\DataPerpustakaan\DataPerpu
 c:\users\atomic\documents\visual studio 2012\Projects\DataPerpustakaan\DataPerpustakaan\obj\Debug\DataPerpustakaan.pdb
 C:\Users\atomic\documents\visual studio 2012\Projects\DataPerpustakaan\DataPerpustakaan\bin\MySql.Data.EntityFramework.dll
 C:\Users\atomic\documents\visual studio 2012\Projects\DataPerpustakaan\DataPerpustakaan\bin\MySql.Data.EntityFramework.xml
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\DataPerpustakaan.dll
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\DataPerpustakaan.pdb
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\DataPerpustakaan.xml
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\Antlr3.Runtime.dll
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\DotNetOpenAuth.Core.dll
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\EntityFramework.dll
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\MySql.Data.EntityFramework.dll
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\System.Web.Optimization.dll
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\System.Web.Providers.dll
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\WebGrease.dll
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\MySql.Data.EntityFramework.xml
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\EntityFramework.xml
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\DotNetOpenAuth.Core.xml
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\obj\Debug\DataPerpustakaan.vbprojResolveAssemblyReference.cache
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\obj\Debug\DataPerpustakaan.Resources.resources
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\obj\Debug\DataPerpustakaan.vbproj.GenerateResource.Cache
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\obj\Debug\DataPerpustakaan.dll
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\obj\Debug\DataPerpustakaan.xml
+C:\Users\atomic\Documents\GitHub\DataPerpustakan\DataPerpustakaan\obj\Debug\DataPerpustakaan.pdb

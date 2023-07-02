@@ -67,6 +67,8 @@ CREATE TABLE peminjaman (
 	- Setiap field tidak boleh kosong.
 	- Field `pengarang` hanya boleh diisi oleh pengarang yang sudah tersimpan di tabel `pengarang`. Jika belum, maka muncul `MessageBox` perintah untuk menyimpan data pengarang baru.
 	- Berlaku sama dengan field `penerbit`.
+- Mengimplementasikan operasi matematika (`AVG`, `COUNT`, `MAX`, `MIN`, `SUM`) pada form `anggota`
+- Menampilkan tabel `peminjaman` berdasarkan waktu (tahun, waktu, dan bulan)
 - Fungsi `Cari` akan melakukan _query_ lalu mengisi setiap form `TextBox`, `DropDownList`, serta `RadioButtonList` dengan value  
 - Fungsi `Edit` dan `Hapus` dilakukan setelah melakukan fungsi `Cari` agar lebih efektif.
 - Fungsi `Tambahkan` pada form `Peminjaman` nilai `status_kembali = 0` adalah _default_. Lalu mengubah `status_pinjam` pada tabel `buku` menjadi `status_pinjam = 1`.
