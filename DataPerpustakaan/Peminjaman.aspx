@@ -41,6 +41,10 @@
         .auto-style36 {
             color: #999999;
         }
+        .auto-style38 {
+            height: 23px;
+            width: 128px;
+        }
     </style>
 </head>
 <body>
@@ -64,14 +68,14 @@
         <tr>
             <td class="auto-style23">&nbsp;</td>
             <td class="auto-style11">&nbsp;</td>
-            <td class="auto-style4" colspan="2"><h2>DATA PEMINJAMAN</h2></td>
+            <td class="auto-style4" colspan="3"><h2>DATA PEMINJAMAN</h2></td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style24"></td>
             <td class="auto-style19"></td>
             <td class="auto-style20"></td>
-            <td class="auto-style28"></td>
+            <td class="auto-style28" colspan="2"></td>
             <td class="auto-style22"></td>
         </tr>
         <tr>
@@ -80,7 +84,7 @@
             <td class="auto-style7">
                 <asp:TextBox ID="TextBox1" runat="server" Width="256px"></asp:TextBox>
             </td>
-            <td class="auto-style29">
+            <td class="auto-style29" colspan="2">
                 &nbsp;</td>
             <td>&nbsp;</td>
         </tr>
@@ -90,7 +94,7 @@
             <td class="auto-style15">
                 <asp:TextBox ID="TextBox2" runat="server" Width="256px"></asp:TextBox>
             </td>
-            <td class="auto-style30"></td>
+            <td class="auto-style30" colspan="2"></td>
             <td class="auto-style17"></td>
         </tr>
         <tr>
@@ -99,7 +103,7 @@
             <td class="auto-style7">
                 <asp:TextBox ID="TextBox3" runat="server" Width="128px"></asp:TextBox>
                 &nbsp;&nbsp;&nbsp;<span class="auto-style36">YYYY-MM-DD</span></td>
-            <td class="auto-style29">&nbsp;</td>
+            <td class="auto-style29" colspan="2">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
@@ -108,7 +112,7 @@
             <td class="auto-style7">
                 <asp:TextBox ID="TextBox4" runat="server" Width="128px"></asp:TextBox>
                 &nbsp;&nbsp; <span class="auto-style36">YYYY-MM-DD</span></td>
-            <td class="auto-style29">&nbsp;</td>
+            <td class="auto-style29" colspan="2">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
@@ -120,7 +124,7 @@
                     <asp:ListItem Value="1">Sudah</asp:ListItem>
                 </asp:RadioButtonList>
             </td>
-            <td class="auto-style29">&nbsp;</td>
+            <td class="auto-style29" colspan="2">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
@@ -128,7 +132,7 @@
             <td class="auto-style11">&nbsp;</td>
             <td class="auto-style7">
                 &nbsp;</td>
-            <td class="auto-style29">&nbsp;</td>
+            <td class="auto-style29" colspan="2">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
@@ -136,7 +140,7 @@
             <td class="auto-style12">&nbsp;</td>
             <td class="auto-style8">
                 &nbsp;</td>
-            <td class="auto-style31">
+            <td class="auto-style31" colspan="2">
                 &nbsp;</td>
             <td class="auto-style2"></td>
         </tr>
@@ -146,7 +150,7 @@
             <td class="auto-style34">
                 <asp:Button ID="Button1" runat="server" style="font-weight: 700" Text="Tambahkan" Width="256px" />
             </td>
-            <td class="auto-style35">
+            <td class="auto-style35" colspan="2">
                 <asp:Button ID="Button6" runat="server" style="font-weight: 700" Text="Edit" Width="256px" />
             </td>
             <td class="auto-style34"></td>
@@ -157,7 +161,7 @@
             <td class="auto-style7">
                 <asp:Button ID="Button2" runat="server" style="font-weight: 700" Text="Tampilkan" Width="256px" />
             </td>
-            <td class="auto-style29">
+            <td class="auto-style29" colspan="2">
                 <asp:Button ID="Button7" runat="server" BackColor="#541F1B" ForeColor="White" style="font-weight: 700" Text="Hapus" Width="256px" />
             </td>
             <td>&nbsp;</td>
@@ -167,30 +171,92 @@
             <td class="auto-style11">&nbsp;</td>
             <td class="auto-style7">
                 &nbsp;</td>
-            <td class="auto-style29">&nbsp;</td>
+            <td class="auto-style29" colspan="2">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style23">&nbsp;</td>
             <td class="auto-style11">Masukkan ID Peminjaman</td>
             <td class="auto-style7">&nbsp;<asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
-                <asp:Button ID="Button5" runat="server" style="font-weight: 700" Text="Cari" Width="72px" />
+                <asp:Button ID="Button5" runat="server" style="font-weight: 700" Text="Cari" Width="64px" />
             </td>
-            <td class="auto-style29">&nbsp;</td>
+            <td class="auto-style29" colspan="2">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style26"></td>
-            <td class="auto-style12"></td>
+            <td class="auto-style12">Jumlah Peminjaman:
+                <asp:Label ID="Label1" runat="server" Text="-"></asp:Label>
+            </td>
             <td class="auto-style2">
+                <asp:DropDownList ID="DropDownList1" runat="server" Height="22px" style="text-align: left" Width="128px">
+                    <asp:ListItem Selected="True">Pilih Tahun</asp:ListItem>
+                    <asp:ListItem>2020</asp:ListItem>
+                    <asp:ListItem>2021</asp:ListItem>
+                    <asp:ListItem>2022</asp:ListItem>
+                    <asp:ListItem>2023</asp:ListItem>
+                </asp:DropDownList>
+                <asp:DropDownList ID="DropDownList2" runat="server" Height="22px" style="text-align: left" Width="128px">
+                    <asp:ListItem>Pilih Bulan</asp:ListItem>
+                    <asp:ListItem>Januari</asp:ListItem>
+                    <asp:ListItem>Februari</asp:ListItem>
+                    <asp:ListItem>Maret</asp:ListItem>
+                    <asp:ListItem>April</asp:ListItem>
+                    <asp:ListItem>Mei</asp:ListItem>
+                    <asp:ListItem>Juni</asp:ListItem>
+                    <asp:ListItem>Juli</asp:ListItem>
+                    <asp:ListItem>Agustus</asp:ListItem>
+                    <asp:ListItem>September</asp:ListItem>
+                    <asp:ListItem>Oktober</asp:ListItem>
+                    <asp:ListItem>November</asp:ListItem>
+                    <asp:ListItem>Desember</asp:ListItem>
+                </asp:DropDownList>
                 </td>
-            <td class="auto-style31"></td>
-            <td class="auto-style2"></td>
+            <td class="auto-style38">
+                <asp:DropDownList ID="DropDownList3" runat="server" Height="22px" style="text-align: left" Width="128px">
+                    <asp:ListItem Selected="True">Pilih Tanggal</asp:ListItem>
+                    <asp:ListItem>1</asp:ListItem>
+                    <asp:ListItem>2</asp:ListItem>
+                    <asp:ListItem>3</asp:ListItem>
+                    <asp:ListItem>4</asp:ListItem>
+                    <asp:ListItem>5</asp:ListItem>
+                    <asp:ListItem>6</asp:ListItem>
+                    <asp:ListItem>7</asp:ListItem>
+                    <asp:ListItem>8</asp:ListItem>
+                    <asp:ListItem>9</asp:ListItem>
+                    <asp:ListItem>10</asp:ListItem>
+                    <asp:ListItem>11</asp:ListItem>
+                    <asp:ListItem>12</asp:ListItem>
+                    <asp:ListItem>13</asp:ListItem>
+                    <asp:ListItem>14</asp:ListItem>
+                    <asp:ListItem>15</asp:ListItem>
+                    <asp:ListItem>16</asp:ListItem>
+                    <asp:ListItem>17</asp:ListItem>
+                    <asp:ListItem>18</asp:ListItem>
+                    <asp:ListItem>19</asp:ListItem>
+                    <asp:ListItem>20</asp:ListItem>
+                    <asp:ListItem>21</asp:ListItem>
+                    <asp:ListItem>22</asp:ListItem>
+                    <asp:ListItem>23</asp:ListItem>
+                    <asp:ListItem>24</asp:ListItem>
+                    <asp:ListItem>25</asp:ListItem>
+                    <asp:ListItem>26</asp:ListItem>
+                    <asp:ListItem>27</asp:ListItem>
+                    <asp:ListItem>28</asp:ListItem>
+                    <asp:ListItem>29</asp:ListItem>
+                    <asp:ListItem>30</asp:ListItem>
+                    <asp:ListItem>31</asp:ListItem>
+                </asp:DropDownList>
+            </td>
+            <td class="auto-style38">
+                <asp:Button ID="Button8" runat="server" style="font-weight: 700" Text="Cari" Width="64px" />
+            </td>
+            <td class="auto-style2">&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style23">&nbsp;</td>
             <td class="auto-style11">&nbsp;</td>
-            <td class="auto-style7" colspan="3">
+            <td class="auto-style7" colspan="4">
     
                 <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical">
                     <AlternatingRowStyle BackColor="White" />

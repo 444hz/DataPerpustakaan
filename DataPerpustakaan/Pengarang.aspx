@@ -124,7 +124,9 @@
             <td class="auto-style23">&nbsp;</td>
             <td class="auto-style11">&nbsp;</td>
             <td class="auto-style7">
-                &nbsp;</td>
+                Jumlah Pengarang:
+                <asp:Label ID="Label1" runat="server" Text="-"></asp:Label>
+            </td>
             <td class="auto-style5">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>

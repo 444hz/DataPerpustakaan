@@ -71,10 +71,12 @@ Public Class Peminjaman
         Dim koneksi As New MySqlConnection("data source=localhost;user=root;pwd='';initial catalog=perpus")
         koneksi.Open()
         Dim tampil As String = "SELECT id_pinjam, peminjaman.ISBN, buku.judul AS judul_buku, peminjaman.NIM, mahasiswa.nama AS nama_mahasiswa, tanggal_pinjam, tanggal_kembali, status_kembali FROM peminjaman JOIN buku ON peminjaman.ISBN = buku.ISBN JOIN mahasiswa ON peminjaman.NIM = mahasiswa.NIM"
+        Dim count As New MySqlCommand("SELECT COUNT(*) FROM peminjaman", koneksi)
         Dim adapter As New MySqlDataAdapter(tampil, koneksi)
         Dim ds As New DataSet
         adapter.Fill(ds)
         Dim tabel As DataTable = ds.Tables(0)
+        Label1.Text = count.ExecuteScalar().ToString()
         GridView1.DataSource = tabel
         GridView1.DataBind()
         adapter.Dispose()
@@ -143,6 +145,44 @@ Public Class Peminjaman
         TextBox3.Text = ""
         TextBox4.Text = ""
         TextBox5.Text = ""
+        koneksi.Close()
+    End Sub
+
+    Protected Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Dim koneksi As New MySqlConnection("data source=localhost;user=root;pwd='';initial catalog=perpus")
+        Dim count As MySqlCommand
+        koneksi.Open()
+        Dim adapter As MySqlDataAdapter
+        If DropDownList1.SelectedIndex = 0 Then
+            MsgBox("Pilih tahun!", MsgBoxStyle.Information)
+            DropDownList1.Focus()
+        Else
+            If DropDownList2.SelectedIndex = 0 And DropDownList3.SelectedIndex = 0 Then
+                Dim tahun As String = "SELECT * FROM peminjaman WHERE YEAR(tanggal_pinjam) = '" & DropDownList1.SelectedValue & "'"
+                count = New MySqlCommand("SELECT COUNT(*) FROM peminjaman WHERE YEAR(tanggal_pinjam) = '" & DropDownList1.SelectedValue & "'", koneksi)
+                adapter = New MySqlDataAdapter(tahun, koneksi)
+            ElseIf DropDownList2.SelectedIndex = 0 And Not DropDownList3.SelectedIndex = 0 Then
+                MsgBox("Pilih bulan!", MsgBoxStyle.Information)
+                DropDownList1.Focus()
+            Else
+                If DropDownList3.SelectedIndex = 0 Then
+                    Dim bulan As String = "SELECT * FROM peminjaman WHERE YEAR(tanggal_pinjam) = '" & DropDownList1.SelectedValue & "' AND MONTH(tanggal_pinjam)= '" & DropDownList2.SelectedIndex & "'"
+                    count = New MySqlCommand("SELECT COUNT(*) FROM peminjaman WHERE YEAR(tanggal_pinjam) = '" & DropDownList1.SelectedValue & "' AND MONTH(tanggal_pinjam)= '" & DropDownList2.SelectedIndex & "'", koneksi)
+                    adapter = New MySqlDataAdapter(bulan, koneksi)
+                Else
+                    Dim tanggal As String = "SELECT * FROM peminjaman WHERE YEAR(tanggal_pinjam) = '" & DropDownList1.SelectedValue & "' AND MONTH(tanggal_pinjam)= '" & DropDownList2.SelectedIndex & "' AND DAY(tanggal_pinjam)= '" & DropDownList3.SelectedValue & "'"
+                    count = New MySqlCommand("SELECT COUNT(*) FROM peminjaman WHERE YEAR(tanggal_pinjam) = '" & DropDownList1.SelectedValue & "' AND MONTH(tanggal_pinjam)= '" & DropDownList2.SelectedIndex & "' AND DAY(tanggal_pinjam)= '" & DropDownList3.SelectedValue & "'", koneksi)
+                    adapter = New MySqlDataAdapter(tanggal, koneksi)
+                End If
+            End If
+        End If
+        Dim ds As New DataSet
+        adapter.Fill(ds)
+        Dim tabel As DataTable = ds.Tables(0)
+        Label1.Text = count.ExecuteScalar().ToString()
+        GridView1.DataSource = tabel
+        GridView1.DataBind()
+        adapter.Dispose()
         koneksi.Close()
     End Sub
 End Class

@@ -62,10 +62,20 @@ Public Class Anggota
         Dim koneksi As New MySqlConnection("data source=localhost;user=root;pwd='';initial catalog=perpus")
         koneksi.Open()
         Dim tampil As String = "SELECT * FROM mahasiswa"
+        Dim count As New MySqlCommand("SELECT COUNT(*) FROM mahasiswa", koneksi)
+        Dim max As New MySqlCommand("SELECT MAX(YEAR(CURRENT_DATE)- YEAR(tanggal_lahir)) FROM mahasiswa", koneksi)
+        Dim min As New MySqlCommand("SELECT MIN(YEAR(CURRENT_DATE)- YEAR(tanggal_lahir)) FROM mahasiswa", koneksi)
+        Dim avg As New MySqlCommand("SELECT AVG(YEAR(CURRENT_DATE)- YEAR(tanggal_lahir)) FROM mahasiswa", koneksi)
+        Dim sum As New MySqlCommand("SELECT AVG(YEAR(CURRENT_DATE)- YEAR(tanggal_lahir)) FROM mahasiswa", koneksi)
         Dim adapter As New MySqlDataAdapter(tampil, koneksi)
         Dim ds As New DataSet
         adapter.Fill(ds)
         Dim tabel As DataTable = ds.Tables(0)
+        Label1.Text = count.ExecuteScalar().ToString()
+        Label2.Text = max.ExecuteScalar().ToString()
+        Label3.Text = min.ExecuteScalar().ToString()
+        Label4.Text = avg.ExecuteScalar().ToString()
+        Label5.Text = sum.ExecuteScalar().ToString()
         GridView1.DataSource = tabel
         GridView1.DataBind()
         adapter.Dispose()
