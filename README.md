@@ -1,7 +1,7 @@
 Aplikasi sederhana ini merupakan sebuah contoh penerapan sistem basis data. Aplikasi ini mengolah data perpustakaan. Data akan disimpan di database `perpus` yang berisi beberapa tabel sebagai berikut, `buku`, `pengarang`, `penerbit`, `mahasiswa`, dan `peminjaman`.
 
 ### Tampilan Utama 
-![Preview Image](DataPerpustakaan/Images/Preview.jpg)
+![Preview Image](DataPerpustakaan/Images/Preview.png)
 _Tampilan Form Buku_
 
 ### Program SQL
